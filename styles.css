@@ -1,0 +1,185 @@
+/* CSS VARIABLES */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GENERAL CSS */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+}
+
+.main-container {
+  margin: 50px auto;
+  width: 40%;
+  height: 50%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.qr-code {
+  width: 90%;
+  height: 40%;
+  border-radius: 10px;
+}
+
+.desc,
+.main-heading {
+  width: 80%;
+  text-align: center;
+}
+
+.main-heading {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin: 15px 0;
+  font-size: 0.9rem;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: var(--grayish-blue);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px) {
+  .main-container {
+    width: 20%;
+  }
+}
